@@ -1,0 +1,16 @@
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+    
+
+    #listItem {
+        width:350px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    #newRecipe{
+        margin-left:10px;
+    }
+
+
+}

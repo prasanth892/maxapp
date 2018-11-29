@@ -1,0 +1,30 @@
+<br><br>
+<div class="container">
+  <div class="row">
+    <button class="btn btn-danger" (click)="addServer()">Add Server</button>
+  </div>
+  
+<br><br>  
+  <div class="container">
+    <button (click)="passData()" class="btn btn-secondary" >Send Data</button>
+  </div>
+
+
+  <br><br>
+  <div class="container">     
+        <div class="panel panel-success" >
+          <div class="panel-heading" #myPanel>This is panel Heading</div>
+          <div class="panel-body">Panel Heading</div>
+        </div>
+  </div>
+
+  <button class="btn btn-danger" (click)="templateFun(myPanel)">Template Reference</button>
+
+  <input type="text" name="" id="" class="form-control" [(ngModel)]="word">
+
+  <p>THtis is what you are typing : {{word}}</p>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

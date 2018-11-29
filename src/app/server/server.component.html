@@ -1,0 +1,20 @@
+<!-- <br><br>
+<div class="container">
+  <div class="row">
+    <button class="btn btn-danger" (click)="addServer()">Add Server</button>
+  </div> -->
+<div class="container">
+  <br>
+<div class="row" *ngFor="let item of myService; let ind = index">
+  <ul class="list-group" style="list-style-type: none;">
+    <a href="#" (click)="removeServer(ind)">
+      <li class="list-item">{{item.id + 1 }} ~ {{ item.name}}</li>
+    </a>
+  </ul>
+</div>
+
+<!-- </div> -->
+</div>
+
+
+<p> server component</p>

@@ -1,0 +1,45 @@
+
+
+ <app-header></app-header>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-recipies></app-recipies>
+      <app-shopping-list></app-shopping-list> -->
+
+      <router-outlet></router-outlet>
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<!--  
+
+  <app-server [myService]="myServiceParent" ></app-server> 
+
+
+
+<app-server></app-server>
+
+<h3 [style.color]="color"><strong>Change Color Text</strong></h3>
+
+<button  class="btn btn-primary" (click)="changeColor()">Onchange First</button>
+
+-->
+
+<app-cockpit (myEventing)="receiveData($event)" ></app-cockpit>
+<div class="container">
+  <br>
+<div class="row" *ngFor="let item of outputArray; let ind = index">
+  <ul class="list-group" style="list-style-type: none;">
+    <a href="#" (click)="removeServer(ind)">
+      <li class="list-item">{{item.id + 1 }} ~ {{ item.name}}</li>
+    </a>
+  </ul>
+</div>
